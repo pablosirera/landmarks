@@ -15,6 +15,8 @@
 		E618938124472D7700E101C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E618937F24472D7700E101C2 /* LaunchScreen.storyboard */; };
 		E618938C24472D7700E101C2 /* LandmarksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E618938B24472D7700E101C2 /* LandmarksTests.swift */; };
 		E618939724472D7700E101C2 /* LandmarksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E618939624472D7700E101C2 /* LandmarksUITests.swift */; };
+		E61893A52447324E00E101C2 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61893A42447324E00E101C2 /* CircleImage.swift */; };
+		E61893A7244733E100E101C2 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61893A6244733E100E101C2 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		E618939224472D7700E101C2 /* LandmarksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LandmarksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E618939624472D7700E101C2 /* LandmarksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksUITests.swift; sourceTree = "<group>"; };
 		E618939824472D7700E101C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E61893A42447324E00E101C2 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		E61893A6244733E100E101C2 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		E618937324472D7200E101C2 /* Landmarks */ = {
 			isa = PBXGroup;
 			children = (
+				E61893A42447324E00E101C2 /* CircleImage.swift */,
 				E618937424472D7200E101C2 /* AppDelegate.swift */,
 				E618937624472D7200E101C2 /* SceneDelegate.swift */,
 				E618937824472D7200E101C2 /* ContentView.swift */,
@@ -106,6 +111,7 @@
 				E618937F24472D7700E101C2 /* LaunchScreen.storyboard */,
 				E618938224472D7700E101C2 /* Info.plist */,
 				E618937C24472D7700E101C2 /* Preview Content */,
+				E61893A6244733E100E101C2 /* MapView.swift */,
 			);
 			path = Landmarks;
 			sourceTree = "<group>";
@@ -268,6 +274,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E618937524472D7200E101C2 /* AppDelegate.swift in Sources */,
+				E61893A52447324E00E101C2 /* CircleImage.swift in Sources */,
+				E61893A7244733E100E101C2 /* MapView.swift in Sources */,
 				E618937724472D7200E101C2 /* SceneDelegate.swift in Sources */,
 				E618937924472D7200E101C2 /* ContentView.swift in Sources */,
 			);
@@ -434,16 +442,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Landmarks/Preview Content\"";
+				DEVELOPMENT_TEAM = 45DNU37Y99;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Landmarks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.Landmarks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.samplecode.Landmarks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -455,13 +466,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Landmarks/Preview Content\"";
+				DEVELOPMENT_TEAM = 45DNU37Y99;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Landmarks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.Landmarks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.samplecode.Landmarks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
